@@ -21,7 +21,6 @@ body {
 
 .wrapper {
     max-width: 1320px;
-    padding: 0 20px;
     margin: 0 auto;
 }
 
@@ -119,6 +118,10 @@ body {
         font-size: 28px;
         line-height: 34px;
         padding-top: 20px;
+    }
+
+    .wrapper {
+        padding: 0px 20px;
     }
 
     .dataBtn {

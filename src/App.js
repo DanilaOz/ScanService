@@ -6,7 +6,7 @@ import { store } from "./store";
 import MainPage from "./pages/Main/MainPage";
 import AuthorizationPage from "./pages/Authorization/AuthorizationPage";
 import SearchPage from "./pages/Search/SearchPage";
-import PageNotFound from "./pages/PageNotFound";
+import PageNotFound from "./pages/PageNotFound/PageNotFound";
 import Layout from "./components/Layout/Layout";
 import RequireAuth from "./hoc/RequireAuth"
 import AuthorizedUser from "./hoc/AuthorizedUser";

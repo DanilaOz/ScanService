@@ -43,7 +43,7 @@ const SearchForm = (props) => {
     startDate: yup.date().required(),
     endDate: yup
       .date()
-      .min(yup.ref("startDate"), "Дата окончания должны быть позже даты начала")
+      .min(yup.ref("startDate"), "Дата окончания должна быть позже даты начала")
       .required(),
     maxFullness: yup.boolean(),
     inBusinessNews: yup.boolean(),

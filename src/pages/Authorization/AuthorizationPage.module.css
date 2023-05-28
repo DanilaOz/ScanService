@@ -122,10 +122,13 @@
 }
 
 .lock {
-    position: absolute;
+    position: relative;
     z-index: 1;
-    left: 819px;
-    top: 108px;
+    left: -70px;
+    top: -80px;
+    width: 75px;
+    height: 92px;
+    margin-bottom: -80px;
 }
 
 .errorMessage {
@@ -139,19 +142,20 @@
 @media (max-width: 1319px) {
     .login {
         flex-direction: column;
+        align-items: center;
         background-position: center 907px;
     }
 
     .lock {
-        position: absolute;
-        z-index: 1;
-        left: 95px;
-        top: 330px;
+        left: 50px;
+        top: -100px;
+        margin-bottom: -100px;
     }
 
     .loginForm {
         margin: 126px 0px 485px 0px;
-        width: auto;
+        max-width: 305px;
+        padding: 25px 15px 39px 15px;
     }
 
     .tabSignIn {

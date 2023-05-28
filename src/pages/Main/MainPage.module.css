@@ -54,5 +54,6 @@
         padding-top: 37px;
         padding-bottom: 43px;
         gap: 43px;
+        justify-content: center;
     }
 }

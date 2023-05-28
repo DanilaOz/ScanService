@@ -28,8 +28,8 @@ const Results = (props) => {
     }
   }, [formData]);
 
-  const histograms = JSON.parse(localStorage.getItem("histograms"));
-  const publications = JSON.parse(localStorage.getItem("publications"));
+  const [histograms, setHistogarms] = useState(null);
+  const [publications, setPublications] = useState(null);
   const token = useSelector((state) => state.token.value);
 
   useEffect(() => {
@@ -49,6 +49,7 @@ const Results = (props) => {
         ).then((response) => {
           dispatch(getHistograms(response.data));
           localStorage.setItem("histograms", JSON.stringify(response));
+          setHistogarms(JSON.parse(localStorage.getItem("histograms")));
         });
       } catch (error) {
         console.error(error);
@@ -77,6 +78,7 @@ const Results = (props) => {
         ).then((response) => {
           dispatch(getPublications(response.data));
           localStorage.setItem("publications", JSON.stringify(response));
+          setPublications(JSON.parse(localStorage.getItem("publications")));
         });
       } catch (error) {
         console.error(error);
