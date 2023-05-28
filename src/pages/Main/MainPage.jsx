@@ -16,8 +16,6 @@ const MainPage = () => {
   const dispatch = useDispatch();
 
   const authorized = useSelector((state) => state.isUserLogged.value);
-  const histograms = useSelector((state) => state.histograms.value);
-  const publications = useSelector((state) => state.publications.value);
 
   return (
     <>
